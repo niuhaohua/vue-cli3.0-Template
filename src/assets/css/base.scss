@@ -1,0 +1,160 @@
+@import './transition.scss';
+@import './sidebar.scss';
+
+/* 默认样式.css start */
+html,body{
+	height: 100%;
+	-webkit-text-size-adjust:none;//禁用浏览器调整字体
+}
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+dd,
+th,
+td,
+input,
+select,
+form,
+textarea{
+	margin:0; 
+	padding:0;
+	font-family:'webfont,Microsoft YaHei,Arial';
+	color:#666666;
+	font-weight:normal;
+	box-sizing: border-box;
+}
+textarea{
+	resize:none; 
+	overflow:auto;
+	outline:none;
+}
+table{
+	border-collapse:collapse;
+}
+li{
+	list-style:none;
+	zoom:1;
+}
+a{
+	text-decoration:none; 
+	outline:none;
+}
+img{
+	border:none; 
+	vertical-align:top;
+}
+input{
+	border:none;
+	outline:none;
+}
+input::-ms-clear{  /* 取消ie10+ x */
+    display:none;
+}
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+	color: #cccccc;
+	font-size: 12px;
+}
+
+strong{
+	font-weight:normal;
+}
+i,
+em{
+	font-style:normal;
+}
+.clear:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clear{
+	zoom:1;
+}
+.fl{ 
+	float:left;
+}
+.fr{ 
+	float:right;
+}
+
+/* 默认样式.css end */
+
+#app {
+	height: 100%;
+}
+.page-main{
+	padding: 25px;
+	background: #fff;
+	min-height: calc(100vh - 129px);
+	box-sizing: border-box;
+}
+
+.el-message-box {
+	min-width: 224px;
+	width: auto;
+}
+
+.confirmButtonClass {
+	background: #47c26f !important;
+	border-radius: 4px;
+	border-color: #47c26f !important;
+	float: left !important;
+	width: 80px;
+	height: 28px;
+	font-size: 12px;
+}
+
+.cancelButtonClass {
+	border: 1px solid #d9d9d9;
+	border-radius: 4px;
+	float: right;
+	width: 80px;
+	height: 28px;
+	font-size: 12px;
+	color: #f35600;
+}
+.el-message-box .el-message-box__title {
+font-family: PingFangSC-Regular;
+font-size: 14px;
+color: #000000;
+line-height: 18px;
+}
+.el-message-box .el-message-box__message {
+	font-family: PingFangSC-Regular;
+	font-size: 12px;
+	color: #919191;
+}
+
+.cell-class{
+	font-size: 12px;
+}
+
+/*滚动条样式*/
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	// -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2); 
+	background: #BFBFBF;
+}
+
+::-webkit-scrollbar-track {
+	// -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2); 
+	border-radius: 0;
+	//  background: rgba(0,0,0,0.1); 
+}
